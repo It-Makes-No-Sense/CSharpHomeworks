@@ -101,4 +101,12 @@
 Console.WriteLine("Задание 8");
 
 Console.WriteLine("Введите число");
-int X = Convert.ToInt32(Console.ReadLine());
+int N = Convert.ToInt32(Console.ReadLine());
+
+for (int start = 1;start < N;start++)
+{
+      if (start % 2 == 0)
+      {
+            Console.Write($"{start} ");
+      }
+} 
