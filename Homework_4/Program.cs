@@ -28,9 +28,8 @@
 // void message()
 // {
 //       int[] array = getArray(5);
-//       Console.Write($"{String.Join(',',array)} --> ");
 //       int countEven = getCountEven(array);
-//       Console.Write($"{countEven}");
+//       Console.Write($"{String.Join(',',array)} --> {countEven}");
 // }
 
 // message();
@@ -48,7 +47,7 @@
 //       return array;
 // }
 
-// int getSumUnevenIndexesInArray(int[] array)
+// int getSum(int[] array)
 // {
 //       int sum = 0;
 //       for (int i = 0; i < array.Length; i++)
@@ -64,10 +63,64 @@
 // void message()
 // {
 //       int[] array = getArray(6);
-//       Console.Write($"{String.Join(',',array)} --> ");
-//       int sum = getSumUnevenIndexesInArray(array);
-//       Console.Write($"{sum}");
+//       int sum = getSum(array);
+//       Console.Write($"{String.Join(',',array)} --> {sum}");
+// }
 
+// message();
+
+// Задача 38: Задайте массив целых двухзначных чисел. 
+// Найдите разницу между максимальным и минимальным элементов массива.
+
+// int[] getArray(int size)
+// {
+//       int[] array = new int[size];
+//       for (int i = 0; i < array.Length; i++)
+//       {
+//             array[i] = new Random().Next(10,99);
+//       }
+//       return array;
+// }
+
+// int getMax(int[] array)
+// {
+//       int max = array[0];
+//       for (int i = 1; i < array.Length; i++)
+//       {
+//             if (array[i] > max)
+//             {
+//                   max = array[i];
+//             }
+//       }
+//       return max;
+// }
+
+// int getMin(int[] array)
+// {
+//       int min = array[0];
+//       for (int i = 1; i < array.Length; i++)
+//       {
+//             if (array[i] < min)
+//             {
+//                   min = array[i];
+//             }
+//       }
+//       return min;
+// }
+
+// int getDifference(int max,int min)
+// {
+//       int dif = max - min;
+//       return dif;
+// }
+
+// void message()
+// {
+//       int[] array = getArray(6);
+//       int max = getMax(array);
+//       int min = getMin(array);
+//       int dif = getDifference(max,min);
+//       Console.Write($"{String.Join(",",array)} --> {max}-{min} = {dif}");
 // }
 
 // message();
