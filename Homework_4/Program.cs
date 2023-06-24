@@ -12,14 +12,26 @@
 //       return array;
 // }
 
-// int[] Array = getArray(5);
-// Console.Write($"{String.Join(',',Array)} -->");
-// int count = 0;
-// for (int i = 0; i < Array.Length; i++)
+// int getCountChet(int[] array)
 // {
-//       if (Array[i] % 2 == 0)
+//       int count = 0;
+//       for (int i = 0; i < array.Length; i++)
 //       {
-//             count++;
+//             if (array[i] % 2 == 0)
+//             {
+//                   count++;
+//             }
 //       }
+//       return count;
 // }
-// Console.Write($"{count}");
+
+// void message()
+// {
+//       int[] array = getArray(5);
+//       Console.Write($"{String.Join(',',array)} --> ");
+//       int countChet = getCountChet(array);
+//       Console.Write($"{countChet}");
+// }
+
+// message();
+
