@@ -3,11 +3,11 @@
 
 // double[,] getArray()
 // {
-//       Console.WriteLine("Введите кол-во строк массива");
-//       int rows = int.Parse(Console.ReadLine()!);
+//       int rows = new Random().Next(1,7);
 
-//       Console.WriteLine("Введите кол-во столбцов массива");
-//       int columns = int.Parse(Console.ReadLine()!);
+//       int columns = new Random().Next(1,7);
+
+//       Console.WriteLine($"m = {rows}, n = {columns}");
 
 //       double[,] array = new double[rows,columns];
 
@@ -35,3 +35,9 @@
 
 // double[,] array = getArray();
 // PrintArray(array);
+
+
+
+// Задача 50. Напишите программу, которая на вход принимает позиции элемента в двумерном массиве,
+//  и возвращает значение этого элемента или же указание, что такого элемента нет.
+
