@@ -127,3 +127,66 @@
 // int[,] array = getArray();
 // printArray(array);
 // diction(array);
+
+
+
+// Задача 58: Задайте две матрицы. 
+// Напишите программу, которая будет находить произведение двух матриц.
+
+// int[,] getArray()
+// {
+//       int rows = 2;
+
+//       int columns = 2;
+
+//       Console.WriteLine($"m = {rows}, n = {columns}");
+
+//       int[,] array = new int[rows,columns];
+
+//       for (int i = 0; i < rows; i++)
+//       {
+//             for (int j = 0; j < columns; j++)
+//             {
+//                   array[i,j] = new Random().Next(2,5);
+//             }
+//       }
+//       return array;
+// }
+
+// void printArray(int[,] array)
+// {
+//       for (int i = 0; i < array.GetLength(0); i++)
+//       {
+//             for (int j = 0; j < array.GetLength(1); j++)
+//             {
+//                   Console.Write($"{array[i,j]} ");
+//             }
+//             Console.WriteLine();
+//       }
+// }
+
+// int[,] getM(int[,] array,int[,] sec_array)
+// {
+//       int[,] res = new int[array.GetLength(0),array.GetLength(1)];
+//       for (int i = 0; i < array.GetLength(0); i++)
+//       {
+//             for (int j = 0; j < sec_array.GetLength(0); j++)
+//             {
+//                   for (int k = 0; k < sec_array.GetLength(1); k++)
+//                   {
+//                         res[i,j] += array[i,k] * sec_array[k,j];
+//                   }
+//             }
+//       }
+
+//       return res;
+// }
+
+// int [,] array = getArray();
+// printArray(array);
+// Console.WriteLine("------");
+// int [,] sec_array = getArray();
+// printArray(sec_array);
+// Console.WriteLine("--result----");
+// int [,] res = getM(array,sec_array);
+// printArray(res);
