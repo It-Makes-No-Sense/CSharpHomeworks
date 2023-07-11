@@ -60,3 +60,70 @@
 // Console.WriteLine("------------");
 // array = reconstruct(array);
 // printArray(array);
+
+
+
+// Задача 57: Составить частотный словарь элементов двумерного массива.
+// Частотный словарь содержит информацию о том, сколько раз встречается элемент входных данных.
+
+// int[,] getArray()
+// {
+//       int rows = new Random().Next(2,10);
+
+//       int columns = new Random().Next(2,10);
+
+//       Console.WriteLine($"m = {rows}, n = {columns}");
+
+//       int[,] array = new int[rows,columns];
+
+//       for (int i = 0; i < rows; i++)
+//       {
+//             for (int j = 0; j < columns; j++)
+//             {
+//                   array[i,j] = new Random().Next(1,10);
+//             }
+//       }
+//       return array;
+// }
+
+// void printArray(int[,] array)
+// {
+//       for (int i = 0; i < array.GetLength(0); i++)
+//       {
+//             for (int j = 0; j < array.GetLength(1); j++)
+//             {
+//                   Console.Write($"{array[i,j]} ");
+//             }
+//             Console.WriteLine();
+//       }
+// }
+
+// void diction(int[,] array)
+// {
+//       int rows = array.GetLength(0);
+//       int columns = array.GetLength(1);
+
+//       var diction = new Dictionary<int, int>();
+//       for (int i = 0; i < rows; i++)
+//       {
+//             for (int j = 0; j < columns; j++)
+//             {
+//                   if (!diction.ContainsKey(array[i,j]))
+//                   {
+//                         diction.Add(array[i,j],1);
+//                   }
+//                   else
+//                   {
+//                         diction[array[i,j]] += 1;
+//                   }
+//             }
+//       }
+//       foreach (var d in diction)
+//       {
+//             Console.WriteLine($"{d.Key} встречается {d.Value} раз");
+//       }
+// }
+
+// int[,] array = getArray();
+// printArray(array);
+// diction(array);
